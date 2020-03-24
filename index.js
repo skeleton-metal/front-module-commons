@@ -1,1 +1,1 @@
-module.exports.ClientError =  require('ClientError')
+module.exports.ClientError = require('./ClientError')
