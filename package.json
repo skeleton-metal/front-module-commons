@@ -1,6 +1,6 @@
 {
   "name": "front-module-commons",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Module for commons things in frontend",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skeleton-metal/front-module-commons.git"
-  },
-  "dependencies": {
-    "apollo-client": "^2.6.8"
   },
   "keywords": [
     "vue",

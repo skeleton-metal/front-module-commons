@@ -1,4 +1,3 @@
-const ApolloError = require("apollo-client");
 
 
 const MESSAGE_GENERIC_ERROR = "Problemas con la aplicación. Contactese con el administrador"
@@ -14,15 +13,11 @@ class ClientError extends Error {
         this.inputErrors = {}
         this.showMessage = ""
 
-        if (error instanceof ApolloError) {
 
-            if (error.networkError) {
-                this.showMessage = MESSAGE_NETWORK_ERROR
-            } else if (error.graphQLErrors.length > 0) {
-
-                this.processFrapjQLErrors(error.graphQLErrors)
-            }
-
+        if (error.networkError) {
+            this.showMessage = MESSAGE_NETWORK_ERROR
+        } else if (error.graphQLErrors && error.graphQLErrors.length > 0) {
+            this.processFrapjQLErrors(error.graphQLErrors)
         } else {
             this.showMessage = MESSAGE_GENERIC_ERROR
         }
