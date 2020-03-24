@@ -7,7 +7,7 @@ const MESSAGE_VALIDATION = "Problemas de validación. Revise los datos ingresado
 const MESSAGE_FORBIDEN = "No Autorizado"
 const MESSAGE_UNAUTHENTICATED = "Requiere login"
 
-module.exports = class ClientError extends Error {
+class ClientError extends Error {
     constructor(error) {
         super(error.message);
         this.name = "ClientError";
@@ -48,3 +48,5 @@ module.exports = class ClientError extends Error {
 
 
 }
+
+module.exports = ClientError;

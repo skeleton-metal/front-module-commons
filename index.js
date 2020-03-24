@@ -1,1 +1,3 @@
-module.exports.ClientError = require('./ClientError')
+const ClientError = require("./ClientError");
+
+module.exports = ClientError;
