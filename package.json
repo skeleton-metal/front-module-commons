@@ -1,0 +1,27 @@
+{
+  "name": "front-module-commons",
+  "version": "1.0.0",
+  "description": "Module for commons things in frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skeleton-metal/front-module-commons.git"
+  },
+  "dependencies": {
+    "apollo-client": "^2.6.8"
+  },
+  "keywords": [
+    "vue",
+    "frontend",
+    "apollo"
+  ],
+  "author": "Cristian Incarnato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skeleton-metal/front-module-commons/issues"
+  },
+  "homepage": "https://github.com/skeleton-metal/front-module-commons#readme"
+}
