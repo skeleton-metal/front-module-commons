@@ -1,6 +1,6 @@
 {
   "name": "front-module-commons",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Module for commons things in frontend",
   "main": "index.js",
   "scripts": {
